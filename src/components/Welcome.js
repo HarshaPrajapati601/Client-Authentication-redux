@@ -4,8 +4,10 @@ const Welcome = () => {
 
     return(
         <h3>
-            Welcome user 
+            Welcome all types of user 
             
         </h3>
     )
 }
+
+export default Welcome;

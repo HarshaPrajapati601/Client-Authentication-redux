@@ -1,37 +1,25 @@
 import React, { Component} from 'react';
-import { Route, Routes, BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 
     renderHeader = () => {
         return(
-            <ul>
-                <li>
-                <Link to="/"> Redux Auth</Link>
-                </li>
-                <li>
+            <div className='d-flex justify-content-between align-items-center'>
+                 <Link to="/"> Redux Auth</Link>
+
                 <Link to="/signup"> Sign Up</Link>
-                </li>
-                <li>
+
                 <Link to="/signin"> Sign In</Link>
-                </li>
-                <li>
+
                 <Link to="/feature"> Feature</Link>
-                </li>
-            </ul>
+            </div>
         )
     }
    render(){
     return(
-        <div>
-             {/* { this.renderHeader() } */}
-                <Link to="/"> Redux Auth</Link>
-
-                <Link to="/signup"> Sign Up</Link>
-
-                <Link to="/signin"> Sign In</Link>
-
-                <Link to="/feature"> Feature</Link>
+        <div className="container">
+            { this.renderHeader() }
         </div>
     )
    }
